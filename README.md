@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+# EDA Grad Helper: Multi-day project for Kahikatea 2022
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## General idea
+The purpose of this app is to help new grads from EDA stay in touch, work together, and navigate the post-bootcamp environment.
 
-## Available Scripts
+(But really, it's a way of having a modular multi-day project with infinite scope for expansion, so cohort members can 'hop in and out' when they have the time or want to pair program.)
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Getting set up
+- Clone down the repo
+- Run `npm i`
+- (When we have the db set up - not yet) Run `knex migrate:latest`, then `knex seed:run`
+- Run `npm start` to see the app in development mode and `npm run build` to see it in production mode
+- Look through the [existing issues](https://github.com/danieldbird/eda-grad-app/issues) and find one you want to work on (or submit a new one). Make sure you assign yourself to the issue to avoid doubling up. At the moment, these issues are mostly big 'idea-type' things to work on, so you might want to create a smaller, bite-sized issue first.
+- Check out a feature branch with the issue number and a descriptive name (like `#1-auth0-setup`, or `#23-add-chat-unit-tests`), then create your code.
+- Create a test for your code.
+- Run `npm test` and make sure nothing is broken.
+- Create a pull request to `main`.
