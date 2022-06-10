@@ -1,17 +1,15 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Auth0Provider, useAuth0 } from '@auth0/auth0-react'
+import { Auth0Provider } from '@auth0/auth0-react'
 
 const Auth0ProviderWithHistory = ({ children }) => {
-  const { user } = useAuth0()
   const domain = process.env.REACT_APP_AUTH0_DOMAIN
   const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID
 
   const history = useNavigate()
-  // const location = useLocation()
 
   const onRedirectCallback = async (appState) => {
-    console.log(appState)
+    history('/register')
   }
 
   return (
