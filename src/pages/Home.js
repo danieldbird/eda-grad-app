@@ -2,7 +2,7 @@ import { useAuth0 } from '@auth0/auth0-react'
 
 function Home() {
   const { isLoading, user } = useAuth0()
-  console.log(user)
+  console.log('user: ', user)
 
   if (isLoading) {
     return <div>Loading</div>
