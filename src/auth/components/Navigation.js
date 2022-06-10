@@ -14,21 +14,35 @@ function Navigation() {
         {/* <li className="p-2 mx-2">
           <Link to="/register">Register</Link>
         </li> */}
-        {!user && (
-          <li className="p-2 mx-2">
-            <button
-              className="btn btn-primary btn-block"
-              onClick={() =>
-                loginWithRedirect({
-                  redirectUri: `${window.location.origin}/register`,
-                })
-              }
-            >
-              Log In
-            </button>
-          </li>
-        )}
-        {user && (
+        {!user ? (
+          <>
+            <li className="p-2 mx-2">
+              <button
+                className="btn btn-primary btn-block"
+                onClick={() =>
+                  loginWithRedirect({
+                    redirectUri: `${window.location.origin}/register`,
+                  })
+                }
+              >
+                Sign In
+              </button>
+            </li>
+            <li className="p-2 mx-2">
+              <button
+                className="btn btn-primary btn-block"
+                onClick={() =>
+                  loginWithRedirect({
+                    screen_hint: 'signup',
+                    redirectUri: `${window.location.origin}/register`,
+                  })
+                }
+              >
+                Sign Up
+              </button>
+            </li>
+          </>
+        ) : (
           <li className="p-2 mx-2">
             <button
               className="btn btn-primary btn-block"
