@@ -3,7 +3,7 @@ import React from 'react'
 
 function Dashboard() {
   const { isLoading, user } = useAuth0()
-  console.log(user)
+  // console.log(user)
 
   if (isLoading) {
     return <div>Loading</div>

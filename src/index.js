@@ -8,7 +8,6 @@ import Auth0ProviderWithHistory from './auth/auth0-provider-with-history'
 import Register from './pages/Register'
 import Home from './pages/Home'
 import Layout from './layout/Layout'
-
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>

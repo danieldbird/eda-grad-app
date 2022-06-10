@@ -21,7 +21,7 @@ function Navigation() {
                 className="btn btn-primary btn-block"
                 onClick={() =>
                   loginWithRedirect({
-                    redirectUri: `${window.location.origin}/register`,
+                    // redirectUri: `${window.location.origin}/register`,
                   })
                 }
               >
@@ -34,7 +34,7 @@ function Navigation() {
                 onClick={() =>
                   loginWithRedirect({
                     screen_hint: 'signup',
-                    redirectUri: `${window.location.origin}/register`,
+                    // redirectUri: `${window.location.origin}/register`,
                   })
                 }
               >
